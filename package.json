@@ -1,17 +1,17 @@
 {
   "name": "functions",
   "version": "1.0.0",
+  "type": "module",
   "description": "This assignment will help you learn to create an installable Node.js command line utility.",
   "main": "index.js",
   "scripts": {
     "test": "node cli.js -n 35.92 -w 79.05 -z America/New_York"
   },
   "repository": {
-    "type": "module",
+    "type": "git",
     "url": "git+https://github.com/comp426-2023-spring/a02-functions-amayak25.git"
   },
-  }
-  "bin": {
+   "bin": {
     "galosh.js": "./cli.js"
   },
   "author": "amayak25",
@@ -25,4 +25,5 @@
     "moment-timezone": "^0.5.40",
     "node-fetch": "^3.3.0"
   }
+  
 }
