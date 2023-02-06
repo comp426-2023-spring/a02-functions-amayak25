@@ -27,7 +27,7 @@ process.exit(0);
 //fetch 
 // Make a request
 //'.com?latitude=' + latitude + '&longitude=' + 
-const response = await fetch (args._[0]+'?'+args.d);
+//const response = await fetch (args._[0]+'?'+args.d);
 const response = await fetch(https://api.open-meteo.com/v1/forecast?latitude=' + Latitude + '&longitude=' + Longitude + '&hourly=temperature_2m&daily=weathercode,temperature_2m_max,temperature_2m_min,precipitation_hours&current_weather=true&timezone=' + timezone);
 // Get the data from the request
 const data = await response.json();
