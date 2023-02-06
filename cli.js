@@ -26,9 +26,12 @@ console.log('Usage: galosh.js [options] -[n|s] LATITUDE -[e|w] LONGITUDE -z TIME
 
 
 // Latitude
-let Latitude;
+//let Latitude;
+const Latitude = parseFloat(args.n || args.s);
+
 //Longitude 
-let Longitude;
+//let Longitude;
+const Longitude = parseFloat(args.e || args.w);
 //Timezone 
 let timezone; 
 
