@@ -25,7 +25,6 @@ console.log('Usage: galosh.js [options] -[n|s] LATITUDE -[e|w] LONGITUDE -z TIME
 
 
 
-console.log(data)
 // Latitude
 let Latitude;
 //Longitude 
