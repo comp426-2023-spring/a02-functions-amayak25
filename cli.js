@@ -29,6 +29,10 @@ console.log('Usage: galosh.js [options] -[n|s] LATITUDE -[e|w] LONGITUDE -z TIME
 let Latitude;
 //Longitude 
 let Longitude;
+//Timezone 
+let timezone; 
+
+
 //option n and s
 if(args.n)
 {
