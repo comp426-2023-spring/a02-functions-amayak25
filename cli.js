@@ -11,7 +11,7 @@ console.log(args)
 
 if (args.h)
 {
-console.log('Usage: galosh.js [options] -[n|s] LATITUDE -[e|w] LONGITUDE -z TIME_ZONE);
+console.log('Usage: galosh.js [options] -[n|s] LATITUDE -[e|w] LONGITUDE -z TIME_ZONE');
  console.log('   -h            Show this help message and exit.');
  console.log('   -n, -s        Latitude: N positive; S negative.');
   console.log('  -e, -w        Longitude: E positive; W negative.');
