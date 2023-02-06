@@ -9,7 +9,7 @@ const args=minimist(process.argv.slice(2));
 
 console.log(args)
 
-if (argv.h)
+if (args.h)
 {
 console.log('Usage: galosh.js [options] -[n|s] LATITUDE -[e|w] LONGITUDE -z TIME_ZONE
     -h            Show this help message and exit.
