@@ -9,7 +9,7 @@ const args=minimist(process.argv.slice(2));
 
 console.log(args)
 
-if (argv.h==true)
+if (argv.h)
 {
 console.log('Usage: galosh.js [options] -[n|s] LATITUDE -[e|w] LONGITUDE -z TIME_ZONE
     -h            Show this help message and exit.
@@ -33,7 +33,10 @@ const response = await fetch(https://api.open-meteo.com/v1/forecast?latitude=' +
 const data = await response.json();
 
 console.log(data)
-
+// Latitude
+let Latitude;
+//Longitude 
+let Longitude;
 //option n and s
 if(args.n)
 {
