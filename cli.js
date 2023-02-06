@@ -55,11 +55,7 @@ timezone=args.t;
 else{
 let timezone = moment.tz.guess();
 }
-//option j
-if(args.j)
-{
-console.log(data);
-}
+
 //Fetch
 // Make a request
 //'.com?latitude=' + latitude + '&longitude=' + 
@@ -69,6 +65,12 @@ const response = await fetch('https://api.open-meteo.com/v1/forecast?latitude=' 
 const data = await response.json();
 
 
+//option j
+//has to be logged after await according to autograder
+if(args.j)
+{
+console.log(data);
+}
 
 //Create the response text using conditional statements.
 const days = args.d ;
