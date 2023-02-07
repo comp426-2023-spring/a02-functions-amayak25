@@ -27,11 +27,11 @@ let latitude;
 //option n and s
 if(args.n)
 {
-latitude=args.n;
+latitude=parseFloat(args.n);
 }
 else if(args.s)
 {
-latitude=-args.s;
+latitude=-parseFloat(args.n);
 }
 
 
