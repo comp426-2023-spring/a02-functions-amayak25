@@ -28,7 +28,7 @@ let latitude;
 if(args.n)
 {
 latitude=args.n;
-if(isNan(Latitude))
+if(!latitude)
 {
 console.log("Latitude must be in range);
 process.exit(1);
@@ -38,10 +38,9 @@ process.exit(1);
 if(args.s)
 {
 latitude=-args.n;
-if(isNan(Latitude))
+if(!latitude)
 {
 console.log("Latitude must be in range);
-process.exit(1);
 }
 }
 
