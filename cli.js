@@ -28,20 +28,12 @@ let latitude;
 if(args.n)
 {
 latitude=args.n;
-if(!latitude)
-{
-console.log("Latitude must be in range");
-
-}
 }
 
 if(args.s)
 {
 latitude=-args.n;
-if(!latitude)
-{
-console.log("Latitude must be in range");
-}
+
 }
 
 
@@ -80,6 +72,11 @@ const data = await response.json();
 if(args.j)
 {
 console.log(data);
+if(!latitude)
+{
+console.log("Latitude must be in range");
+}
+process.exit(0);
 }
 
 //Create the response text using conditional statements.
