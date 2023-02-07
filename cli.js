@@ -39,11 +39,11 @@ latitude=-args.s;
 let longitude;
 //option e and w
 if(args.e){
-Longitude=args.e;
+longitude=args.e;
 }
 else if(args.w)
 {
-Longitude=-args.w;
+longitude=-args.w;
 }
 
 
