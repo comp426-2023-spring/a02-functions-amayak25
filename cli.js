@@ -31,7 +31,7 @@ latitude=args.n;
 if(!latitude)
 {
 console.log("Latitude must be in range);
-process.exit(1);
+
 }
 }
 
