@@ -1,13 +1,14 @@
 #!/usr/bin/env node
-import moment from 'moment-timezone';
 
 import minimist from 'minimist';
+
+import moment from 'moment-timezone';
 
 import fetch from 'node-fetch';
 
 const args=minimist(process.argv.slice(2));
 
-console.log(args)
+
 
 if (args.h)
 {
@@ -22,46 +23,44 @@ process.exit(0);
 }
 
 // Latitude
-var Latitude;
+let latitude;
 //option n and s
 if(args.n)
 {
-Latitude=args.n;
+latitude=args.n;
 }
-if(args.s)
+else if(args.s)
 {
-Latitude=-args.s;
+latitude=-args.s;
 }
 
 
 //Longitude 
-var Longitude;
+let longitude;
 //option e and w
 if(args.e){
 Longitude=args.e;
 }
-if(args.w)
+else if(args.w)
 {
 Longitude=-args.w;
 }
 
 
 //Timezone 
-var timezone; 
+let timezone=moment.tz.guess();; 
 //option z
 if (args.z)
 {
 timezone=args.t;
 }
-else{
-let timezone = moment.tz.guess();
-}
+
 
 //Fetch
 // Make a request
 //'.com?latitude=' + latitude + '&longitude=' + 
 //const response = await fetch (args._[0]+'?'+args.d);
-var response = await fetch('https://api.open-meteo.com/v1/forecast?latitude=' + Latitude + '&longitude=' + Longitude + '&timezone=' + timezone + '&daily=percipiation_hours');
+var response = await fetch('https://api.open-meteo.com/v1/forecast?latitude=' + latitude + '&longitude=' + longitude + '&timezone=' + timezone + '&daily=percipiation_hours');
 // Get the data from the request
 const data = await response.json();
 
