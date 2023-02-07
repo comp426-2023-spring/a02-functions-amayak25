@@ -30,7 +30,7 @@ if(args.n)
 latitude=args.n;
 if(!latitude)
 {
-console.log("Latitude must be in range);
+console.log("Latitude must be in range");
 
 }
 }
@@ -40,7 +40,7 @@ if(args.s)
 latitude=-args.n;
 if(!latitude)
 {
-console.log("Latitude must be in range);
+console.log("Latitude must be in range");
 }
 }
 
