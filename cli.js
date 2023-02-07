@@ -27,11 +27,22 @@ let latitude;
 //option n and s
 if(args.n)
 {
-latitude=parseFloat(args.n);
-}
-else if(args.s)
+latitude=args.n;
+if(isNan(Latitude))
 {
-latitude=-parseFloat(args.n);
+console.log("Latitude must be in range);
+process.exit(1);
+}
+}
+
+if(args.s)
+{
+latitude=-args.n;
+if(isNan(Latitude))
+{
+console.log("Latitude must be in range);
+process.exit(1);
+}
 }
 
 
